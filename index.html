@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/easing.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/splitText.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <title>Title</title>
+</head>
+<body>
+    <main>
+        <div id="start" class="stage active">
+            <div class="stage__content start">
+                <div class="score-display">0</div>
+                <h1 class="start__title">DOG QUIZ</h1>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/Dogs.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/pixel_dog1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/pixelshiba.jpeg" alt=""></div>    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <button class="btn-start" data-next="#q01" data-score="0">START</button>
+            </div>
+        </div>
+
+        <div id="q01" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">Question 1</h2>
+                <div class="quiz__question"><p class="scText">これは何の犬ですか？</p></div>
+                <div class="edit"><img src="./images/bull.jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-1" data-next="#q02" data-score="10">ブール</button>
+                    <button class="btn-2" data-next="#q02" data-score="0">チワワ</button>
+                    <button class="btn-3" data-next="#q02" data-score="0">ハスキー</button>
+                    <button class="btn-4" data-next="#q02" data-score="0">コーギー</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q02" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">解釈</h2>
+                <div class="quiz__question">
+                    <p class="scText">これは何の犬ですか？<br> これはブールです！<br>ブルドッグ（英: bulldog）は、18世紀ごろの英国で雄牛（ブル）と犬を戦わせる牛いじめ（英: bullbaiting）という見世物が流行し、牛に対抗できる犬として開発された犬の品種の一つ。</p>
+                </div>
+                <div class="edit"><img src="./images/bull-2.jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-next" data-next="#q03" data-score="0">次の質問</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q03" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">Question 2</h2>
+                <div class="quiz__question"><p class="scText">これは何の犬ですか？</p></div>
+                <h2></h2>
+                <div class="edit"><img src="./images/chihuahua (2).jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-1" data-next="#q04" data-score="0">ブール</button>
+                    <button class="btn-2" data-next="#q04" data-score="10">チワワ</button>
+                    <button class="btn-3" data-next="#q04" data-score="0">ハスキー</button>
+                    <button class="btn-4" data-next="#q04" data-score="0">コーギー</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q04" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">解釈</h2>
+                <div class="quiz__question">
+                    <p class="scText">これは何の犬ですか？<br> これはチワワです！<br>チワワは、北アメリカにおいては最も古い犬種であり、テチチ (Techichi) として知られるアステカ文明の王族の時代から飼われ儀式の生贄とされていた、現状よりすこし大きい犬種の直系の子孫であると考えられている。人墓から一緒に埋葬されたテチチの骨も発掘されている。アステカ族の建造物の壁面にもテチチが描かれておりテチチの存在を大いに証明してくれた。</p>
+                </div>
+                <div class="edit"><img src="./images/chihuahua.jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-next" data-next="#q05" data-score="0">次の質問</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q05" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">Question 3</h2>
+                <div class="quiz__question"><p class="scText">これは何の犬ですか？</p></div>
+                <h2></h2>
+                <div class="edit"><img src="./images/corgi.jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-1" data-next="#q06" data-score="0">ブール</button>
+                    <button class="btn-2" data-next="#q06" data-score="0">チワワ</button>
+                    <button class="btn-3" data-next="#q06" data-score="0">ハスキー</button>
+                    <button class="btn-4" data-next="#q06" data-score="10">コーギー</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q06" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">解釈</h2>
+                <div class="quiz__question">
+                    <p class="scText">これは何の犬ですか？<br> これはコーギーです！<br>ウェルシュ・コーギー（英語: Welsh Corgi）は、犬の品種（犬種）。ウェルシュ・コルギーとも。
+
+                        起源は曖昧な部分が多いが、数百年もの間、ウエールズの牧畜において関与してきた。「ヤード・ロング・ドッグ」という別称があり、体長がほぼ40インチ（ウェールズの1ヤードに相当）であることを意味する</p>
+                </div>
+                <div class="edit"><img src="./images/Corgi-2.jpeg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-next" data-next="#q07" data-score="0">次の質問</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q07" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">Question 4</h2>
+                <div class="quiz__question"><p class="scText">これは何の犬ですか？</p></div>
+                <h2></h2>
+                <div class="edit"><img src="./images/husky (2).jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-1" data-next="#q08" data-score="0">ブール</button>
+                    <button class="btn-2" data-next="#q08" data-score="0">チワワ</button>
+                    <button class="btn-3" data-next="#q08" data-score="10">ハスキー</button>
+                    <button class="btn-4" data-next="#q08" data-score="0">コーギー</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q08" class="stage">
+            <div class="stage__content quiz">
+                <div class="score-display">0</div>
+                <h2 class="quiz__no">解釈</h2>
+                <div class="quiz__question">
+                    <p class="scText">これは何の犬ですか？<br> これはハスキーです！<br>シベリアン・ハスキー（Siberian Husky ）は、犬種の一つ。ロシアのシベリア地方を主産地とする。外観からアラスカン・マラミュートと混同されるが、多くの面で異なる特徴を有する。</p>
+                </div>
+                <div class="edit"><img src="./images/huski-2.jpg" alt=""></div>
+                <div class="quiz__answer">
+                    <button class="btn-next" data-next="#result" data-score="0">結果を見ましょう❕</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result" class="stage">
+            <div class="stage__content result">
+                <h2 class="result__title">RESULT</h2>
+                <div class="score-display">0</div>
+                <div class="result__msg"><p>結果が表示されました</p></div>
+                <button class="btn-result" data-next="#start">最初に戻る</button>
+            </div>
+        </div>
+    </main>
+    <script src="../comp/assets/js/prism.js"></script>
+</body>
+</html>
